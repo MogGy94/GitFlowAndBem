@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: consolas;
+    --dark_violete: #583d72;
+    --ligth_violete: #9f5f80;
+    --orange: #ffba93;
+    --strong_orange: #ff8e71;
+}
+
+body{
+    display: grid;
+    place-items:center;
+    min-height: 100vh;
+    background: var(--dark_violete);   
+}
+#app{
+    display: grid;
+    place-items:center;
+    min-width: 100vw;
+    min-height: 100vh;
+
+}
+
+.section_card{
+    margin: 20px 0;
+}
+.section_contactUs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background: var(--orange);
+}
+
+.section_contactUs:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: var(--strong_orange);
+}
+
+ 
