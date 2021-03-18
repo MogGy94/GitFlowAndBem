@@ -2,19 +2,19 @@ import * as React from 'react';
 import { useState, useEffect, useRef } from 'react';
 
 import { fromEvent, interval, from } from 'rxjs';
-import { distinct, map, takeUntil, takeWhile } from 'rxjs/operators';
+import { distinct, map, takeUntil, takeWhile, distinctUntilChanged } from 'rxjs/operators';
 
 
-const MyDistinct = () => {
+const MyDistinctUntilChange = () => {
     const [numeros, setNumeros] = useState([]);
     const [pers, setPers] = useState([]);
 
     const numeros$ = from([1, 1, 1, 3, 3, 2, 2, 4, 4, 5, 1]).pipe(
-        distinct()
+        distinctUntilChanged()
     );
 
     const personajes$ = from(personajes).pipe(
-        distinct((({ nombre }) => (nombre)))
+        distinctUntilChanged((anterior, actual) => anterior.nombre === actual.nombre)
     );
     const handleAddNumber = (num) => {
         setNumeros(actual => ([...actual, num]))
@@ -28,13 +28,11 @@ const MyDistinct = () => {
     }, [])
     useEffect(() => {
         console.log(pers);
-
     }, [pers])
     return (
         <div className="">
-            <h2>Distinct -Operator </h2>
-            <p>el operador <mark>Distinct</mark> emite solo las emiciones del Observable que no hallansido emitidas previamente por el Observable ; se puede pasar una funcion como parametro que busque sobre la propiedad especifica de un Objeto</p>
-            <br />
+            <h2>Distinct Until Change -Operator </h2>
+
             <p>el operador <mark>Distinct Until Change</mark> emite solo las emiciones del Observable que sean diferentes a la emicion inmediatamente anterior del Observable</p>
             <ul>
                 {
@@ -68,6 +66,10 @@ const personajes: Personaje[] = [
         element: "Ice"
     },
     {
+        nombre: "Megaman",
+        element: "Ice"
+    },
+    {
         nombre: "CutMan",
         element: "Iron"
     },
@@ -76,25 +78,26 @@ const personajes: Personaje[] = [
         element: "Wind"
     },
     {
-        nombre: "Rockman",
-        element: "Energi"
+        nombre: "Zero",
+        element: "Fire"
     },
     {
         nombre: "Zero",
         element: "Fire"
     },
     {
-        nombre: "Megaman",
-        element: "Ice"
+        nombre: "Rockman",
+        element: "Energi"
     },
     {
         nombre: "Rockman",
         element: "Energi"
     },
     {
-        nombre: "Zero",
-        element: "Fire"
+        nombre: "Airman",
+        element: "Wind"
     },
+
 ]
 
-export default MyDistinct;
+export default MyDistinctUntilChange;
