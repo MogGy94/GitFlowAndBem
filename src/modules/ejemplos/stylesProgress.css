@@ -1,0 +1,15 @@
+.text__content{
+    margin-top: 3vh;
+    max-width: 60vw;
+    color: white;
+}
+
+.progress-bar{
+    position: fixed;
+    top:0;
+    left:0;
+    height: 5px;
+    width: var(--p);
+    background-color: rgb(153, 134, 51);
+    transition: 0.5s
+}
