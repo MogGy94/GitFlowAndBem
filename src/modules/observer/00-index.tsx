@@ -18,12 +18,16 @@ import MyFirst from './operadores/17-first';
 import MyTakeWhile from './operadores/18-takeWhile'
 import MyTakeUntil from './operadores/19-takeUntil-Skip';
 import MyDistinct from './operadores/20-Distict';
+import MyDistinctUntilChange from './operadores/21-DistictUntilChange';
+import MyDistinctUntilKeyChange from './operadores/22-DistictUntilKeyChange';
 
 const Index = () => (
     <>
         <div className="Operadores">
-            <MyDistinct></MyDistinct>
+            <MyDistinctUntilKeyChange></MyDistinctUntilKeyChange>
             {/*     
+            <MyDistinctUntilChange></MyDistinctUntilChange>
+            <MyDistinct></MyDistinct>
             <MyTakeUntil></MyTakeUntil>
             <MyTakeWhile></MyTakeWhile>
             <MyFirst></MyFirst>
