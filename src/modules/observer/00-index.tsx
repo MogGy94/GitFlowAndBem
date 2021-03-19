@@ -24,14 +24,18 @@ import MyDistinctUntilKeyChange from './operadores/22-DistictUntilKeyChange';
 /**Operadores de Tiempo */
 import MyDebounceTime from './operadoresDeTiempo/23-debounceTime';
 import MyThrottleTime from './operadoresDeTiempo/24-throttleTime';
-
+import MySampleTime from './operadoresDeTiempo/25-SampleTime';
+import MySample from './operadoresDeTiempo/26-Sample';
+import MyAuditTime from './operadoresDeTiempo/27-AuditTime';
 
 const Index = () => (
     <>
         <div className="OperadoresDeTiempo">
-
-            <MyThrottleTime></MyThrottleTime>
+            <MyAuditTime></MyAuditTime>
             {/* 
+            <MySample></MySample>
+            <MySampleTime></MySampleTime>
+            <MyThrottleTime></MyThrottleTime>
             <MyDebounceTime></MyDebounceTime>
             
             */}
