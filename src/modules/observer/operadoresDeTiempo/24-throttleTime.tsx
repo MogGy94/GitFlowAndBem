@@ -4,7 +4,7 @@ import { fromEvent, Subject, asyncScheduler } from 'rxjs';
 import { throttleTime, pluck, distinctUntilChanged } from 'rxjs/operators';
 
 import './styles.css'
-const MyDebounceTime = () => {
+const MyThrottleTime = () => {
     const DEBOUNCE = 1000;
     const buttonRef = useRef();
     const textAreaReft = useRef();
@@ -74,4 +74,4 @@ const MyDebounceTime = () => {
     )
 }
 
-export default MyDebounceTime;
+export default MyThrottleTime;
