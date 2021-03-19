@@ -17,7 +17,8 @@ const App = () => (
         </section>
         <section className="section_contactUs">
             <ContactUs></ContactUs>
-        </section> */}
+        </section>
+    */}
     </>
 
 )
