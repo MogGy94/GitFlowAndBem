@@ -28,11 +28,39 @@ import MySampleTime from './operadoresDeTiempo/25-SampleTime';
 import MySample from './operadoresDeTiempo/26-Sample';
 import MyAuditTime from './operadoresDeTiempo/27-AuditTime';
 
+/**Peticiones Ajaxs */
+import MyFetch from './ajax/28-MyFetch';
+import MyCatchError from './ajax/29-catchError';
+import MyGetJson from './ajax/30-getJson';
+import MyPostPutDel from './ajax/31-Post_Put_del'
+import MyOpAplanamiento from './ajax/33-OpAplanamiento';
+import MyMergeAll from './operadoresDeTransformacion/34-MergeAll';
+import MyMergeMap from './operadoresDeTransformacion/35-MergeMap';
+import MyMergeMapXamples from './operadoresDeTransformacion/36-SwitchMap';
+import MyConcatMap from './operadoresDeTransformacion/37-concatMap';
+import MyExhaustMap from './operadoresDeTransformacion/38-ExhaustMap';
+
 const Index = () => (
     <>
+        <div className="Peticiones Ajax">
+            <MyExhaustMap></MyExhaustMap>
+            {/**
+            <MyConcatMap></MyConcatMap>
+            <MyMergeMapXamples></MyMergeMapXamples>
+            <MyMergeMap></MyMergeMap>
+            <MyMergeAll></MyMergeAll>
+            <MyOpAplanamiento></MyOpAplanamiento>
+            <MyPostPutDel></MyPostPutDel>
+            <MyGetJson></MyGetJson>
+            <MyCatchError></MyCatchError>
+            <MyFetch></MyFetch>
+             
+             * 
+             */}
+        </div>
         <div className="OperadoresDeTiempo">
-            <MyAuditTime></MyAuditTime>
             {/* 
+            <MyAuditTime></MyAuditTime>
             <MySample></MySample>
             <MySampleTime></MySampleTime>
             <MyThrottleTime></MyThrottleTime>
