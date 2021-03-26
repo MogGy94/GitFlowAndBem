@@ -21,6 +21,7 @@ const MyConcatMap = () => {
         click$.pipe(
             switchMap(() => interval$)
         ).subscribe(val => console.log({ switchMap: val }))
+
     }, [])
 
     return (

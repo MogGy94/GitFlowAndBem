@@ -9,24 +9,6 @@ const url2 = 'https://httpbin.org/delay/1'
 const wrongURL = 'https://api.github.com/usersXXXXXX?per_page=5'
 
 
-/**
- * ajax.get(url, headers)
- * ajax.delete(url,headers)
- * ajax.post(url, body,headers) 
- * ajax.put(url,body,headers)}
- * 
- * 
- * ajax.post(url,{
- *      id: 1,
- *      nombre:'Fernando'
- *      },
- *      {
- *        'mi-token': 'ABVSD123'
- *      }
- * )
- * 
- * 
- */
 
 const MyGetJson = () => {
     const obs$ = ajax({
