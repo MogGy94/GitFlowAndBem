@@ -39,12 +39,27 @@ import MyMergeMap from './operadoresDeTransformacion/35-MergeMap';
 import MyMergeMapXamples from './operadoresDeTransformacion/36-SwitchMap';
 import MyConcatMap from './operadoresDeTransformacion/37-concatMap';
 import MyExhaustMap from './operadoresDeTransformacion/38-ExhaustMap';
+import EjemploOperadoresDeAplanamiento from '../ejemplos/39-EjemOpAplanamiento';
+
+/** Operadores y métodos de Combinacion */
+import MyStartEndWith from './operadoresDeCombinacion/40-startEnd-With';
+import MyConcat from './operadoresDeCombinacion/41-concat-fun';
+import MyMergeFun from './operadoresDeCombinacion/42-merge-fun';
 
 const Index = () => (
     <>
+        <div className="">
+            <MyMergeFun></MyMergeFun>
+            {/*
+            <MyConcat></MyConcat>
+            <MyStartEndWith></MyStartEndWith>
+            
+            */}
+        </div>
         <div className="Peticiones Ajax">
-            <MyExhaustMap></MyExhaustMap>
             {/**
+            <EjemploOperadoresDeAplanamiento></EjemploOperadoresDeAplanamiento>
+            <MyExhaustMap></MyExhaustMap>
             <MyConcatMap></MyConcatMap>
             <MyMergeMapXamples></MyMergeMapXamples>
             <MyMergeMap></MyMergeMap>

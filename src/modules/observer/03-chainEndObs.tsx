@@ -9,7 +9,9 @@ const observer: Observer<any> = {
 }
 
 
-/**Utilizar el Add para crear subscripciones Hijas */
+/**Utilizar el Add para crear subscripciones Hijas
+ * 
+ */
 const intervalo$ = new Observable<number>(subscriber => {
     //crear un contador 1,2,3,4
     let count = 0;

@@ -37,8 +37,6 @@ const MyDebounceTime = () => {
             debounceTime(DEBOUNCE),
             distinctUntilChanged()
         ).subscribe(val => console.log(`Subject: ${val}`));
-
-
     }, [])
 
     return (

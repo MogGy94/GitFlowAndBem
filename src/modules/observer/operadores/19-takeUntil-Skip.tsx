@@ -29,7 +29,7 @@ const MyTakeWhile = () => {
             <h2>takeUntil -Operator </h2>
             <p><mark>TakeUntil</mark> permite que un observable emita valores <strong>hasta</strong> que otro <mark>Observable</mark> emita valores</p>
             <br />
-            <p><mark>Skip</mark> permite que un observable emita valores <strong>hasta</strong> que otro <mark>Observable</mark> emita valores</p>
+            <p><mark>Skip</mark> permite que un observable ignore los primeros N valores que <strong>hasta</strong> que otro <mark>Observable</mark> emita valores</p>
             <h3>Interval <mark>..{int}.. </mark></h3>
             <button ref={buttonRef}> STOP THE INTERVAL</button>
         </div>
