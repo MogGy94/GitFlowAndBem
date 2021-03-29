@@ -9,11 +9,11 @@ const App = () => (
     <>
         <Observer></Observer>
         {/* 
+        <AlarmClock></AlarmClock>
         <ProggressBar></ProggressBar>
         
         <section className="section_card">
             <ShowFoldingCard></ShowFoldingCard>
-            <AlarmClock></AlarmClock>
         </section>
         <section className="section_contactUs">
             <ContactUs></ContactUs>
