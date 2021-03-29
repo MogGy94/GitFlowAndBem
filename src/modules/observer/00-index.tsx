@@ -45,12 +45,30 @@ import EjemploOperadoresDeAplanamiento from '../ejemplos/39-EjemOpAplanamiento';
 import MyStartEndWith from './operadoresDeCombinacion/40-startEnd-With';
 import MyConcat from './operadoresDeCombinacion/41-concat-fun';
 import MyMergeFun from './operadoresDeCombinacion/42-merge-fun';
+import MyCombineLastest from './operadoresDeCombinacion/43-combine-Latests'
+import MyForkJoin from './operadoresDeCombinacion/43-ForkJoin';
 
+/** Ejemplos  */
+import Capitalize from '../ejemplos/44-Capitalizar';
+import ReduceArray from '../ejemplos/45-ReduceArray';
+import RandomNumbers from '../ejemplos/46-Randoms';
+import CountDown from '../ejemplos/47-countDown';
 const Index = () => (
     <>
+        <div className="ejemplos">
+            <CountDown></CountDown>
+            {/* 
+            <RandomNumbers></RandomNumbers>
+                <ReduceArray></ReduceArray>
+                <Capitalize></Capitalize>
+            
+            */}
+        </div>
         <div className="">
-            <MyMergeFun></MyMergeFun>
             {/*
+            <MyForkJoin></MyForkJoin>
+            <MyCombineLastest></MyCombineLastest>
+            <MyMergeFun></MyMergeFun>
             <MyConcat></MyConcat>
             <MyStartEndWith></MyStartEndWith>
             

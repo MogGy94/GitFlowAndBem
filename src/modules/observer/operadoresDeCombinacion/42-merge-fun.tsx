@@ -26,6 +26,7 @@ const MyMergeFun = () => {
     return (
         <div className="">
             <h2>Merge Function</h2>
+            <p>La funcion <mark>Merge</mark> recibe uno o más <mark>Observables</mark> como parametro  </p>
             <div className="d">
 
                 {
